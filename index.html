@@ -539,7 +539,7 @@
             object-fit: cover;
         }
         
-        /* Music Player */
+/* Music Player */
         .music-player {
             position: fixed;
             bottom: 2rem;
@@ -551,12 +551,20 @@
             backdrop-filter: blur(10px);
             z-index: 1000;
             transition: all 0.3s ease;
+            max-width: calc(100vw - 4rem);
+            box-sizing: border-box;
         }
         
         .music-controls {
             display: flex;
             align-items: center;
             gap: 1rem;
+            white-space: nowrap;
+        }
+        
+        .music-controls > div {
+            min-width: 0;
+            flex-shrink: 1;
         }
         
         .play-btn {
@@ -568,6 +576,7 @@
             border-radius: 50%;
             cursor: pointer;
             transition: all 0.3s ease;
+            flex-shrink: 0;
         }
         
         .play-btn:hover {
