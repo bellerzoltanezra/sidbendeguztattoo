@@ -716,25 +716,40 @@
             }
             
             .featured-grid {
-                grid-template-columns: 1fr;
-            }
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .music-player {
+        display: none;
+    }
             
-            .music-player {
-                bottom: 1rem;
-                right: 1rem;
-                left: 1rem;
-                max-width: calc(100% - 2rem);
-                padding: 0.8rem;
-            }
-            
-            .process-timeline {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-            
-            .process-timeline::before {
-                display: none;
-            }
+                .process-timeline {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    
+    .process-step {
+        padding: 1rem;
+    }
+    
+    .step-number {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .step-content h3 {
+        font-size: 1rem;
+    }
+    
+    .step-content p {
+        font-size: 0.8rem;
+    }
+    
+    .step-icon {
+        font-size: 1.5rem;
+    }
+
             
             .services-grid {
                 grid-template-columns: 1fr;
@@ -878,7 +893,9 @@
     <section id="featured" class="featured-works">
         <div class="container">
             <h2 class="section-title slide-in-title">KIEMELT MUNKÁIM</h2>
-            <div class="featured-grid">
+
+            <h3 style="text-align: center; color: var(--accent-red); font-family: 'Anton', sans-serif; font-size: 2rem; margin: 2rem 0 1.5rem; text-transform: uppercase; letter-spacing: 2px;">PORTRÉK</h3>
+<div class="featured-grid">
 
                 <div class="featured-item">
                     <img src="assets/img/11.JPG" alt="Tetoválás 11">
@@ -924,6 +941,12 @@
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <h3 style="text-align: center; color: var(--accent-red); font-family: 'Anton', sans-serif; font-size: 2rem; margin: 3rem 0 1.5rem; text-transform: uppercase; letter-spacing: 2px;">SZÍNES MINTÁK</h3>
+<div class="featured-grid">
+
+
                 <div class="featured-item">
                     <img src="assets/img/13.JPG" alt="Tetoválás 13">
                     <div class="featured-overlay">
@@ -966,6 +989,10 @@
                         </div>
                     </div>
                 </div>
+</div>
+
+<h3 style="text-align: center; color: var(--accent-red); font-family: 'Anton', sans-serif; font-size: 2rem; margin: 3rem 0 1.5rem; text-transform: uppercase; letter-spacing: 2px;">TAKARÁSOK</h3>
+<div class="featured-grid">
 
                 <div class="featured-item">
                     <img src="assets/img/6.JPG" alt="Tetoválás 6">
